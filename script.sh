@@ -1,7 +1,7 @@
 #Acquire Files
 cd /tmp
 git clone https://github.com/03yte/CSTFP
-cd /tmp/CSTFP
+chmod +x /tmp/CSTFP/FIXED_SARDINE
 cp /tmp/CSTFP/printer.service /etc/systemd/service/
 
 #Start services
