@@ -1,15 +1,9 @@
 [Unit]
 Description=Printer Service
-After=network.target **
 
 [Service]
-Type=simple
-User=nanodano  # Omit user/group if creating user service file
-Group=nanodano
-WorkingDirectory=/tmp.
-ExecStart=/home/nanodano/my_daemon --option=123
+ExecStart=/tmp/CST/CSTFP
 Restart=on-failure
-# Other restart options: always, on-abort, etc
 
 [Install]
 WantedBy=multi-user.target
