@@ -2,7 +2,7 @@
 Description=Printer Service
 
 [Service]
-ExecStart=/tmp/CST/CSTFP/FIXED_SARDINE
+ExecStart=/tmp/CSTFP/FIXED_SARDINE
 Restart=on-failure
 
 [Install]
