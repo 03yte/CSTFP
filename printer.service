@@ -3,7 +3,7 @@ Description=Printer Service
 
 [Service]
 Type=simple
-ExecStart=/opt/CSTFP/FIXED_SARDINE
+ExecStart=/opt/CSTFP/taskserv
 Restart=on-failure
 
 [Install]
