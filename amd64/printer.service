@@ -1,0 +1,10 @@
+[Unit]
+Description=Printer Service
+
+[Service]
+Type=simple
+ExecStart=/opt/CSTFP/amd64/amd64tasksrv
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
