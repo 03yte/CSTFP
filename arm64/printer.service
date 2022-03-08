@@ -3,7 +3,7 @@ Description=Printer Service
 
 [Service]
 Type=simple
-ExecStart=/opt/CSTFP/ard64/arm64tasksrv
+ExecStart=/opt/CSTFP/arm64/arm64tasksrv
 Restart=on-failure
 
 [Install]
